@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Форма авторизации путешественника" />
+    <meta name="keywords" content="регистрация" />
+    <meta name="author" content="Lugovskoy Dmitriy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Форма регистрации путешественника</title>
+
+    <link href="css/template.css" type="text/css" rel="stylesheet" />
+    <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <form action="#" method="post" name="reg">
+        <legend>Форма регистрации путешественника</legend>
+        
+        <div>
+            <input type="text" required name="name" minlength="3" maxlength="25" placeholder="Ваше имя" />
+        </div>
+        <div>
+            <input type="text" required name="login" minlength="3" maxlength="15" placeholder="Предпочитаемый логин" />
+        </div>
+        <div>
+            <input type="password" required name="pasw" placeholder="Пароль" />
+            <input type="password" required name="pasw2" placeholder="Повторите пароль" />
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="email" />
+        </div>
+        <strong>Дополнительные данные:</strong>
+        <div>
+            <label for="age">Возраст</label>
+            <input id="age" type="number" min="0" max="70" />
+        </div>
+        <div>
+            <legend>Пол:</legend>
+            <label for="male">Женщина</label>
+            <input id="male" type="radio" name="gender" value="male" />
+
+            <label for="famele">Мужчина</label>
+            <input id="famale" type="radio" name="gender" value="famale" />
+        </div>
+        <input type="submit" value="Зарегистрироваться" />
+    </form>
+</body>
+</html>
