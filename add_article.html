@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Добавления статьи | Форма добавления статьи" />
+    <meta name="keywords" content="добавить статью, форма статьи" />
+    <meta name="author" content="Lugovskoy Dmitriy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Форма добавления статьи</title>
+
+    <link href="css/template.css" type="text/css" rel="stylesheet" />
+    <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <form enctype="multipart/form-data" action="#" method="post" name="article">
+        <legend>Форма добавления статьи</legend>
+
+        <div>
+            <label for="title">Название</label>
+            <input id="title" type="text" required name="name" minlength="3" maxlength="25" />
+        </div>
+        <div>
+            <label for="chast">Вступительная часть статьи</label>
+            <textarea id="chast" name="chast" minlength="20" maxlength="200"></textarea>
+            <small><em>Максимальная часть текста 200 символов</em></small>
+        </div>
+        <div>
+            <label for="osnova">Вступительная часть статьи</label>
+            <textarea id="osnova" name="osnova"></textarea>
+        </div>
+        <div>
+            <label for="picther">Изображение</label>
+            <input id="picther" type="file" name="photo" accept="image/*" />
+            <small><em>Изображение, которое располгается между вступительной и основной частью текста</em></small>
+        </div>
+        <div>
+            <label for="slider">Фотографии для слайдера</label>
+            <input id="slider" type="file" name="slider[]" accept="image/*" />
+        </div>
+        <input type="submit" name="save" value="Сохранить" />
+        <input type="submit" name="apply" value="Применить" />
+        <small><em>После сохранения Вы автоматически перенарправляетесь на уровень вверх.<br />
+            При нажатии на кнопку "применить" Вы остаетесь на этой же странице</em></small>
+    </form>
+</body>
+</html>
