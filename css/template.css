@@ -9,6 +9,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+img {
+    width:100%;
+    height:auto;
+}
 
 #header {
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
@@ -24,3 +28,130 @@ body {
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto;
 }
+
+/* Шапка сайта */
+#header ul {
+    margin: 0;
+    padding: 0;
+}
+    #header ul li {
+        list-style: none;
+    }
+    #header nav.uk-navbar-container {
+        padding: 15px 0;
+    }
+
+.slider {
+    max-width:65%;
+    margin:0 auto;
+}
+
+/* Кнопки соцсетей*/
+ul.socialIcons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    ul.socialIcons li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    ul.socialIcons li span {
+        cursor: pointer;
+        background-color: gray;
+        -webkit-transition: .5s;
+        transition: .5s;
+        border-radius: 7px;
+        -webkit-box-border-radius: 7px;
+        -moz-box-border-radius: 7px;
+        display: block;
+        display: block;
+        width: 30px;
+        height: 30px;
+            
+    }
+    ul.socialIcons span:hover, ul.socialIcons span:active {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        background-color: blue;
+    }
+
+    ul.socialIcons i {
+        padding-top: 5px;
+        color: white;
+    }
+    ul.socialIcons i:hover {
+        color: blueviolet;
+    }
+
+/* Разное */
+.loc, .tar {
+    color: #777;
+    cursor: pointer;
+}
+    .loc:hover, .tar:hover {
+        color: #000;
+        text-decoration: underline
+    }
+
+/* Кнопка поднятия на верх */
+#toTop {
+    width: 80px;
+    border: 1px solid #ccc;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: .3em 10px;
+    position: fixed;
+    bottom: 2.5em;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    font-size: 1em;
+    z-index: 3;
+}
+
+    #toTop:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+/* Кнопка */
+.button {
+    line-height: 1.8em;
+    display: block;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffb07c), to(#f35364));
+    background-image: linear-gradient(to top, #ffb07c 0%, #f35364 100%);
+    -pie-background: linear-gradient(to top, #ffb07c 0%, #f35364 100%);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+    -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+    -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+    color: white;
+    font-family: 'psb';
+    font-size: 1.6em;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px, 5px, 5px, 5px;
+    -webkit-box-border-radius: 5px, 5px, 5px, 5px;
+    -moz-box-border-radius: 5px, 5px, 5px, 5px;
+    border-radius: 10px;
+    -webkit-box-border-radius: 10px;
+    -moz-box-border-radius: 10px;
+    cursor: pointer;
+    max-width: 220px;
+}
+
+    .button:hover {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#f35364), to(#ffb07c));
+        background-image: linear-gradient(to top, #f35364 0%, #ffb07c 100%);
+        -pie-background: linear-gradient(to top, #f35364 0%, #ffb07c 100%);
+        box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
+        -webkit-box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
+    }

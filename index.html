@@ -10,53 +10,109 @@
 
     <title>Страничка путешественника</title>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.3/css/uikit.min.css?cea91185077e4ac8a01e9fd0bb8d6d2f" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.3/css/uikit-rtl.min.css?cea91185077e4ac8a01e9fd0bb8d6d2f" rel="stylesheet">
     <link href="css/template.css" type="text/css" rel="stylesheet" />
+    <link href="css/menu.css" type="text/css" rel="stylesheet" />
     <link href="css/responsive.css" type="text/css" rel="stylesheet" />
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    
 </head>
 <body>
     <header id="header">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li class="dropdown">
-                    Страны
-                    <ul class="sub-list">
-                        <li><a href="country.html">Европа</a></li>
-                        <li><a href="country.html">Азия</a></li>
-                        <li><a href="country.html">Северная Америка</a></li>
-                        <li><a href="country.html">Южная Америка</a></li>
-                        <li><a href="country.html">Африка</a></li>
-                        <li><a href="country.html">Австралия</a></li>
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="topmenu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="" class="submenu-link">Страны</a>
+                            <ul class="submenu">
+                                <li class="uk-active"><a href="country.html">Европа</a></li>
+                                <li><a href="country.html">Азия</a></li>
+                                <li><a href="country.html">Северная Америка</a></li>
+                                <li><a href="country.html">Южная Америка</a></li>
+                                <li><a href="country.html">Африка</a></li>
+                                <li><a href="country.html">Австралия</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
-                </li>
-                <li><a href="search.html">Поиск</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <a href="tel:89219672585">8-961-967-25-85</a>
-        </div>
-        <section class="slider">
-            <img src="img/slider/travel.jpg" />
-            <img src="img/slider/travel-2.jpg" />
-            <img src="img/slider/travel-3.jpg" />
-        </section>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="topmenu">
+                        <li><a href="autorizacion.html">Вход</a></li>
+                        <li><a href="registracion.html">Регистрация</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div>
+                <a href="tel:89219672585">8-961-967-25-85</a>
+            </div>
+            <section class="slider">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="img/slider/travel.jpg" alt="Путешествие" /></li>
+                        <li> <img src="img/slider/travel-2.jpg" alt="Путешествие" /></li>
+                        <li><img src="img/slider/travel-3.jpg" alt="Путешествие" /></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+            </section>
     </header>
     <main id="main-content">
-        <h1>Страничка путешественника</h1>
-        <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
+        <div class="uk-container uk-container-expand">
+            <div class="uk-grid">
+                <div class="uk-width-1-5@m uk-visible@s">
+                    Левая колонка
+                </div>
+                <div class="uk-width-expand">
+                    <h1>Страничка путешественника</h1>
+                    <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
+                    <div class="blocks uk-column-1-2">
+                        <article>
+                            <h2>Подзаголовок</h2>
+                            <a href="#" class="autor">Lugovskoy Dmitriy</a> <time>06.03.2020</time>
+                            <li><img src="img/slider/travel.jpg" alt="Путешествие" /></li>
+                            <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
+                            <a class="button">Читать далее...</a>
+                        </article>
+                        <article>
+                            <h2>Подзаголовок</h2>
+                            <a href="#" class="autor">Lugovskoy Dmitriy</a> <time>06.03.2020</time>
+                            <li><img src="img/slider/travel.jpg" alt="Путешествие" /></li>
+                            <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
+                            <a class="button">Читать далее...</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer id="footer">
-        <span>Соцсети</span>
-        <ul>
-            <li>В контакте</li>
-            <li>Инстраграм</li>
-            <li>Одноклассники</li>
-            <li>Файсбук</li>
-        </ul>
-        &copy; 2020 Все права защищены законом
+        <div class="uk-container uk-container-expand">
+            <ul class="socialIcons uk-padding-small-left">
+                <li><span class="tar uk-text-center" data-ssil="#"><i uk-icon="icon: facebook"></i></span></li>
+                <li><span class="tar uk-text-center" data-ssil="#"><i uk-icon="icon: twitter"></i></span></li>
+                <li><span class="tar uk-text-center" data-ssil="#"><i uk-icon="icon: instagram"></i></span></li>
+                <li><span class="tar uk-text-center" data-ssil="#"><i uk-icon="icon: youtube"></i></span></li>
+                <li><span class="tar uk-text-center" data-ssil="https://vk.com/kushiy_dmitriy"><i uk-icon="icon:bold"></i></span></li>
+            </ul>
+            &copy; 2020 Все права защищены законом
+        </div>
     </footer>
+
+    <div id="toTop"> ^ Наверх</div>
+
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
+    <script src="js/template.js"></script>
+    <script src="https://use.fontawesome.com/83d4965072.js"></script>
 </body>
 </html>
