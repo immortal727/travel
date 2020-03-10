@@ -2,13 +2,46 @@
 /* flex-shrink — определяет, насколько будет сокращаться элемент, когда для всего не будет достаточно места; */
 /* flex-basis — размер для элемента, установленный по умолчанию. */
 html, body {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 body {
     display: flex;
     flex-direction: column;
 }
+
+body {
+    position: relative;
+    z-index: 0;
+}
+
+    body:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        background: url('/img/fon_bg.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.1;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+        -moz-opacity: 0.1;
+        -khtml-opacity: 0.1;
+    }
+    body.bg {
+        background: #fcfcfc;
+        opacity: 0.8;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+    }
+
 img {
     width:100%;
     height:auto;
