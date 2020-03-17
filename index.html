@@ -45,7 +45,7 @@
                 <div class="uk-navbar-right">
                     <ul class="topmenu">
                         <li><a href="autorizacion.html">Вход</a></li>
-                        <li><a href="registracion.html">Регистрация</a></li>
+                        <li><a href="#openModal">Регистрация</a></li>
                     </ul>
                 </div>
             </nav>
@@ -80,7 +80,7 @@
                             <time>06.03.2020</time>
                             <img src="img/slider/travel.jpg" alt="Путешествие" />
                             <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
-                            <div class="autor"><a href="#" >Lugovskoy Dmitriy</a></div>
+                            <div class="autor"><a href="#">Lugovskoy Dmitriy</a></div>
                             <a class="button">Читать далее...</a>
                         </article>
                         <article>
@@ -88,7 +88,7 @@
                             <time>06.03.2020</time>
                             <img src="img/slider/travel.jpg" alt="Путешествие" />
                             <p>Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi a felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.</p>
-                            <div class="autor"><a href="#" >Lugovskoy Dmitriy</a></div>
+                            <div class="autor"><a href="#">Lugovskoy Dmitriy</a></div>
                             <a class="button">Читать далее...</a>
                         </article>
                     </div>
@@ -111,11 +111,63 @@
     </footer>
 
     <div id="toTop"> ^ Наверх</div>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2 class="gradient-text">Регистрация</h2>
+            <form action="#" method="post" name="reg">
+                <div>
+                    <label>
+                        <span uk-icon="icon:user"></span>
+                        <span class="needreq">*</span>
+                        <input type="text" required name="name" minlength="3" maxlength="25" placeholder="Ваше имя" />
+                    </label>
+                    <label>
+                        <span uk-icon="icon:user"></span>
+                        <span class="needreq">*</span>
+                        <input type="text" required name="login" minlength="3" maxlength="15" placeholder="Логин" />
+                    </label>  
+                </div>
+                 
+                <div>
+                    <label>
+                        <span uk-icon="icon:lock"></span>
+                        <span class="needreq">*</span>
+                        <input type="password" required name="pasw" placeholder="Пароль" />
+                    </label>
+                    <label>
+                        <span uk-icon="icon:lock"></span>
+                        <span class="needreq">*</span>
+                        <input type="password" required name="pasw2" placeholder="Повторите пароль" />
+                    </label>
+                    
+                </div>
+                <div>
+                    <label for="mail" uk-icon="icon:mail"></label>
+                    <input id="mail" type="email" name="email" />
+                </div>
+                <strong>Дополнительные данные:</strong>
+                <div>
+                    <label for="age">Возраст</label>
+                    <input id="age" type="number" min="0" max="70" />
+                </div>
+                <div>
+                    <legend><strong>Пол:</strong></legend>
+                    <label for="male">Женщина</label>
+                    <input id="male" type="radio" name="gender" value="male" />
 
-    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
-    <script src="js/template.js"></script>
-    <script src="https://use.fontawesome.com/83d4965072.js"></script>
+                    <label for="famele">Мужчина</label>
+                    <input id="famale" type="radio" name="gender" value="famale" />
+                </div>
+                <input type="submit" class="button uk-margin-small-top" value="Зарегистрироваться" />
+            </form>
+        </div>
+    </div>
+
+        <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit-icons.min.js?cea91185077e4ac8a01e9fd0bb8d6d2f"></script>
+        <script src="js/template.js"></script>
+        <script src="https://use.fontawesome.com/83d4965072.js"></script>
 </body>
 </html>
