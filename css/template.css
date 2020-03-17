@@ -1,6 +1,6 @@
-/* flex-grow — определяет, сколько свободного места в контейнере переходит к элементу; */
-/* flex-shrink — определяет, насколько будет сокращаться элемент, когда для всего не будет достаточно места; */
-/* flex-basis — размер для элемента, установленный по умолчанию. */
+п»ї/* flex-grow вЂ” РѕРїСЂРµРґРµР»СЏРµС‚, СЃРєРѕР»СЊРєРѕ СЃРІРѕР±РѕРґРЅРѕРіРѕ РјРµСЃС‚Р° РІ РєРѕРЅС‚РµР№РЅРµСЂРµ РїРµСЂРµС…РѕРґРёС‚ Рє СЌР»РµРјРµРЅС‚Сѓ; */
+/* flex-shrink вЂ” РѕРїСЂРµРґРµР»СЏРµС‚, РЅР°СЃРєРѕР»СЊРєРѕ Р±СѓРґРµС‚ СЃРѕРєСЂР°С‰Р°С‚СЊСЃСЏ СЌР»РµРјРµРЅС‚, РєРѕРіРґР° РґР»СЏ РІСЃРµРіРѕ РЅРµ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјРµСЃС‚Р°; */
+/* flex-basis вЂ” СЂР°Р·РјРµСЂ РґР»СЏ СЌР»РµРјРµРЅС‚Р°, СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Р№ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ. */
 html, body {
     /*height: 100%;*/
 }
@@ -62,7 +62,7 @@ img {
     flex: 0 0 auto;
 }
 
-/* Шапка сайта */
+/* РЁР°РїРєР° СЃР°Р№С‚Р° */
 #header ul {
     margin: 0;
     padding: 0;
@@ -78,13 +78,34 @@ img {
     max-width:65%;
     margin:0 auto;
 }
-
-/* Кнопки соцсетей*/
-ul.socialIcons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Р‘Р»РѕРі СЃС‚Р°С‚РµР№ */
+.blocks time {
+    display:block;
+    margin:0 5px;
 }
+.blocks img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.blocks .autor {
+    margin-bottom:7px;
+    position:relative;
+    padding-left:10%;
+}
+    .blocks .autor:before {
+        position:absolute;
+        content:"РђРІС‚РѕСЂ: ";
+        left:0;
+    }
+
+    /* РљРЅРѕРїРєРё СЃРѕС†СЃРµС‚РµР№*/
+    ul.socialIcons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
     ul.socialIcons li {
         display: inline-block;
         margin: 0 5px;
@@ -121,7 +142,7 @@ ul.socialIcons {
         color: blueviolet;
     }
 
-/* Разное */
+/* Р Р°Р·РЅРѕРµ */
 .loc, .tar {
     color: #777;
     cursor: pointer;
@@ -131,7 +152,7 @@ ul.socialIcons {
         text-decoration: underline
     }
 
-/* Кнопка поднятия на верх */
+/* РљРЅРѕРїРєР° РїРѕРґРЅСЏС‚РёСЏ РЅР° РІРµСЂС… */
 #toTop {
     width: 80px;
     border: 1px solid #ccc;
@@ -152,10 +173,19 @@ ul.socialIcons {
         background: rgba(0, 0, 0, 0.9);
     }
 
-/* Кнопка */
+/* РўРµРєСЃС‚РѕРІС‹Р№ РіСЂР°РґРёРµРЅС‚*/
+.gradient-text {
+    font-weight:bold;
+    background: linear-gradient(45deg, #0B2349 20%, #0D61BC 60%, #8AA9D6);
+    -webkit-background-clip: text; /* РћР±СЂРµР·Р°РµС‚ Р»СЋР±РѕР№ С„РѕРЅ РїРѕ РіСЂР°РЅРёС†Рµ С‚РµРєСЃС‚Р°*/
+    -webkit-text-fill-color: transparent; /* РЎРѕР·РґР°РµС‚ РїСЂРѕР·СЂР°С‡РЅС‹Р№ С„РѕРЅ Р±СѓРєРІ, Р·Р° СЃС‡РµС‚ С‡РµРіРѕ РїСЂРѕРіР»СЏРґС‹РІР°РµС‚ СЃР°Рј С„РѕРЅ */
+}
+/* РљРЅРѕРїРєР° */
 .button {
-    line-height: 1.8em;
+    line-height: 1.4em;
+    font-size: 1.2em;
     display: block;
+    text-align: center;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#ffb07c), to(#f35364));
     background-image: linear-gradient(to top, #ffb07c 0%, #f35364 100%);
     -pie-background: linear-gradient(to top, #ffb07c 0%, #f35364 100%);
@@ -164,7 +194,6 @@ ul.socialIcons {
     -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
     color: white;
     font-family: 'psb';
-    font-size: 1.6em;
     text-decoration: none;
     position: relative;
     z-index: 1;
@@ -187,4 +216,5 @@ ul.socialIcons {
         box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
         -webkit-box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
         -moz-box-shadow: 0 0 4 rgba(0, 0, 0, 0.16);
+        color: #f6f4f4;
     }

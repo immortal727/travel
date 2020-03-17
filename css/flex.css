@@ -1,0 +1,14 @@
+.flex-row {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.blocks.flex-row article {
+    width:45%;
+}
+@media only screen and (max-width : 768px) {
+    .blocks.flex-row article {
+        width: 100%
+    }
+}
